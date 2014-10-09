@@ -15,3 +15,6 @@ function FixedUpdate () {
 	transform.Translate(Vector3.forward * Time.deltaTime * speed * Input.GetAxis("Vertical"));
 	transform.Translate(Vector3.right * Time.deltaTime * speed * Input.GetAxis("Horizontal"));
 }
+
+
+//A.Hitler
