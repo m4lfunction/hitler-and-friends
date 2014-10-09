@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Units\CharacterController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Weapons\Bullets\BulletControl.js">
     <Files>
-      <File FileName="Assets\Scripts\Units\CharacterController.js" Line="16" Column="10" />
-      <File FileName="Assets\Scripts\Weapons\GunControl.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Weapons\GunControl.js" Line="23" Column="48" />
       <File FileName="Assets\Scripts\Weapons\Bullets\BulletControl.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
