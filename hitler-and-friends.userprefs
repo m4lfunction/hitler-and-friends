@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Weapons\Bullets\BulletControl.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Units\Controller.js">
     <Files>
-      <File FileName="Assets\Scripts\Weapons\GunControl.js" Line="23" Column="48" />
+      <File FileName="Assets\Scripts\Weapons\GunControl.js" Line="18" Column="1" />
       <File FileName="Assets\Scripts\Weapons\Bullets\BulletControl.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Units\Controller.js" Line="28" Column="92" />
+      <File FileName="Assets\Scripts\Menus\MainMenu.js" Line="6" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
