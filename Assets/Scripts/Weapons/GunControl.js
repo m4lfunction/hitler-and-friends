@@ -10,7 +10,7 @@ function Start () {
 
 function Update () {
 
-	if (Input.GetButton("Fire1")){
+	if (Input.GetAxis("AimHorizontal") || Input.GetAxis("AimVertical")){
   		var bullet = Instantiate(bulletBase, nozzle.position, transform.rotation);
 		bullet.rigidbody.AddForce (Vector3.forward * shootForce);
 		bullet.rigidbody.AddForce(nozzle.position * shootForce, ForceMode.Impulse);
