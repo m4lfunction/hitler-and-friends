@@ -11,8 +11,9 @@ function Start () {
 function Update () {
 
 	if (Input.GetAxis("AimHorizontal") || Input.GetAxis("AimVertical")){
-  		var bullet = Instantiate(bulletBase, nozzle.position, transform.rotation);
-		bullet.rigidbody.AddForce (Vector3.forward * shootForce);
-		bullet.rigidbody.AddForce(nozzle.position * shootForce, ForceMode.Impulse);
+  		var bullet : GameObject = Instantiate(bulletBase, nozzle.position,nozzle.rotation);
+		//bullet.GetComponentInChildren(Rigidbody).velocity = transform.TransformDirection(Vector3(0,0,shootForce));
+		//bullet.transform.Translate(Vector3.forward * shootForce * Time.deltaTime);
+		bullet.rigidbody.AddRelativeForce(Vector3.forward * shootForce, ForceMode.Impulse);
    	}
 }
