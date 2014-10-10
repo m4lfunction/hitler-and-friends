@@ -2,6 +2,7 @@
 
 var walkSpeed : float = 10;
 var nozzleSpeed : float = 5;
+var nozzleFixpoint : Transform;
 private var speed : float;
 
 var nozzle : GameObject;
@@ -13,7 +14,7 @@ function Start () {
 }
 
 function Update(){
-		nozzleDistance = Vector3.Distance(nozzle.transform.position, transform.position);
+		nozzleDistance = Vector3.Distance(nozzle.transform.position, nozzleFixpoint.position);
 }
 
 function FixedUpdate () {
@@ -27,11 +28,17 @@ function MoveCharacter(){
 }
 
 function MoveNozzle(){
+	var charPos : Vector3 = new Vector3(nozzleFixpoint.transform.position.x ,nozzleFixpoint.transform.position.y, nozzleFixpoint.transform.position.z);
+	var newPos : Vector3 = new Vector3(0,nozzleFixpoint.transform.position.y, 0);
+	var step : float = Time.deltaTime * nozzleSpeed;
 	if(nozzleDistance < maxNozzleDistance){
 		nozzle.transform.Translate(Vector3.forward * Time.deltaTime * nozzleSpeed * Input.GetAxis("AimVertical"));
 		nozzle.transform.Translate(Vector3.right * Time.deltaTime * nozzleSpeed * Input.GetAxis("AimHorizontal"));
+		//nozzle.transform.position = Vector3.MoveTowards(nozzle.transform.position, newPos, step);
 	}else{
-		var step : float = Time.deltaTime * nozzleSpeed;
-		nozzle.transform.position = Vector3.MoveTowards(nozzle.transform.position, transform.position, step);
+		//nozzle.transform.position = Vector3.MoveTowards(nozzle.transform.position, charPos, step);
+		nozzle.transform.position = Vector3.MoveTowards(nozzle.transform.position, nozzleFixpoint.position, step);
 	}
+	
+	
 }
