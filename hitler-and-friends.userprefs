@@ -1,12 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Misc\LookAt.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Weapons\GunControl.js">
     <Files>
-      <File FileName="Assets\Scripts\Units\Controller.js" Line="44" Column="2" />
-      <File FileName="Assets\Scripts\Weapons\GunControl.js" Line="18" Column="2" />
-      <File FileName="Assets\Scripts\Weapons\Bullets\BulletControl.js" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\Weapons\GunControl.js" Line="14" Column="5" />
+      <File FileName="Assets\Scripts\Units\Controller.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Weapons\Bullets\BulletControl.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Menus\MainMenu.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Misc\LookAt.js" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\Misc\LookAt.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
